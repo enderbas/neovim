@@ -192,6 +192,9 @@ end, { desc = "Derle ve Çalıştır" })
 vim.keymap.set('n', '<A-Left>', '<C-o>', { desc = "Geri Git (Jump List)" })
 vim.keymap.set('n', '<A-Right>', '<C-i>', { desc = "İleri Git (Jump List)" })
 
+-- Insert Modunda Alt + Backspace ile kelime silme (VS Code Tarzı)
+vim.keymap.set('i', '<A-BackSpace>', '<C-w>', { desc = "Kelime sil" })
+
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
